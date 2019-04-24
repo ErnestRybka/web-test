@@ -105,7 +105,7 @@ objects:
           serviceAccountName: "velocigene-web"
           containers:
             - name: "velocigene-web"
-              image: "${REGISTRY}/${IMAGE_NAME}:${APP_VERSION}"
+              image: "rybkaer/test-web:test"
               imagePullPolicy: Always
               ports:
                 - containerPort: 8080
@@ -150,10 +150,10 @@ objects:
         - type: ConfigChange
 parameters:
   - displayName: Docker registry
-    name: REGISTRY
+    name: "rybkaer"
     required: true
   - displayName: Application image name
-    name: IMAGE_NAME
+    name: "test-web"
     required: true
     value: "velocigene-web"
   - displayName: Application version
@@ -161,11 +161,11 @@ parameters:
     required: true
     value: "1.0.44-rc1-65"
   - displayName: Current namespace
-    name: NAMESPACE
+    name: "velocigen-web-test"
     required: true
   - displayName: Replica count
     name: REPLICA_COUNT
     required: true
     value: "2"
   - displayName: Routing Subdomain
-    name: SUBDOMAIN
+    name: "192.168.99.111.nip.io"
