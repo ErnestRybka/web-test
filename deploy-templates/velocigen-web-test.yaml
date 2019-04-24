@@ -171,4 +171,4 @@ parameters:
     value: "2"
   - displayName: Routing Subdomain
     name: SUBDOMAIN
-    value: "192.168.99.111.nip.io"
+    value: "192.168.99.112.nip.io"
