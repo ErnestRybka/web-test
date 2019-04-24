@@ -150,22 +150,25 @@ objects:
         - type: ConfigChange
 parameters:
   - displayName: Docker registry
-    name: "rybkaer"
+    name: REGISTRY
     required: true
+    value: rybkaer
   - displayName: Application image name
-    name: "test-web"
+    name: IMAGE_NAME
     required: true
     value: "velocigene-web"
   - displayName: Application version
     name: APP_VERSION
     required: true
-    value: "1.0.44-rc1-65"
+    value: "test"
   - displayName: Current namespace
-    name: "velocigen-web-test"
+    name: NAMESPACE
     required: true
+    value: "velocigen-web-test"
   - displayName: Replica count
     name: REPLICA_COUNT
     required: true
     value: "2"
   - displayName: Routing Subdomain
-    name: "192.168.99.111.nip.io"
+    name: SUBDOMAIN
+    value: "192.168.99.111.nip.io"
