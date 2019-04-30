@@ -160,7 +160,7 @@ parameters:
   - displayName: Application version
     name: APP_VERSION
     required: true
-    value: "test"
+    value: "latest"
   - displayName: Current namespace
     name: NAMESPACE
     required: true
